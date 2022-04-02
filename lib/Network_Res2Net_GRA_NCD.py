@@ -152,7 +152,7 @@ class ReverseStage(nn.Module):
 
 class Network(nn.Module):
     # res2net based encoder decoder
-    def __init__(self, channel=32, imagenet_pretrained=True):
+    def __init__(self, channel=32, imagenet_pretrained=False):
         super(Network, self).__init__()
         # ---- ResNet Backbone ----
         self.resnet = res2net50_v1b_26w_4s(pretrained=imagenet_pretrained)
